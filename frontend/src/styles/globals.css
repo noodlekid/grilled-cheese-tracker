@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-dark: #1a1a2e;
+  --bg-panel: #16213e;
+  --border-color: #e94560;
+  --text-primary: #f4f4f4;
+  --text-secondary: #a8a8a8;
+  --accent: #ffd700;
+  --accent-glow: #ffed4e;
+  --success: #4caf50;
+  --warning: #ff9800;
+  --danger: #f44336;
+  --cheese-yellow: #ffc107;
+}
+
+body {
+  font-family: "Courier Prime", monospace;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(233, 69, 96, 0.03) 2px,
+    rgba(233, 69, 96, 0.03) 4px
+  );
+  animation: scanlines 8s linear infinite;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
